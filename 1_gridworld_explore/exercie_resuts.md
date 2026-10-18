@@ -1,3 +1,46 @@
+### Ex-1
+
+$
+G = a_1 + \gamma a_2 + \gamma^2 a_1 + \gamma^3 a_2 + \dots
+  = \sum_{k=0}^{\infty} \gamma^{2k}\,(a_1 + \gamma a_2)
+  = \frac{a_1 + \gamma a_2}{1 - \gamma^2}, \qquad \gamma < 1
+$
+
+$\pi_{\text{left}}$: $a_1 = 1,\ a_2 = 0$
+
+$\pi_{\text{right}}$: $a_1 = 0,\ a_2 = 2$
+
+$\gamma = [0, 0.9, 0.5]$
+
+$\gamma = 0$
+
+$
+G_{\text{left}} = \frac{1 + 0}{1 - 0} = 1, \qquad
+G_{\text{right}} = \frac{0 + 0}{1 - 0} = 0
+$
+
+Optimal policy $\pi_{\text{left}}$.
+
+$\gamma = 0.9$
+
+$
+G_{\text{left}} = \frac{1 + 0}{1 - 0.81} = \frac{1}{0.19} \approx 5.26, \qquad
+G_{\text{right}} = \frac{0 + 2 \cdot 0.9}{1 - 0.81} = \frac{1.8}{0.19} \approx 9.47
+$
+
+Optimal policy $\pi_{\text{right}}$.
+
+$\gamma = 0.5$
+
+$
+G_{\text{left}} = \frac{1 + 0}{1 - 0.25} = \frac{1}{0.75} = \frac{4}{3} \approx 1.33, \qquad
+G_{\text{right}} = \frac{0 + 2 \cdot 0.5}{1 - 0.25} = \frac{1}{0.75} = \frac{4}{3} \approx 1.33
+$
+
+Both policies are optimal
+
+### Ex-2.2
+
 What is the value of the start state in the MazeGrid environment for the
 random policy (default discount factor γ = 0.9). Try different number
 of episodes (use -k xxxx -q) and provide mean value and the standard
