@@ -288,11 +288,13 @@ if __name__ == '__main__':
 
   # Exercise 1: implement the mean and std of the value estimation for the start state and print it out
   #  check what runEpisode returns
-
+  returns_collect = []
   for episode in range(1, opts.episodes+1):
-    runEpisode(a, env, opts.discount, decisionCallback, displayCallback, messageCallback, pauseCallback, episode)
+    returns_collect.append(runEpisode(a, env, opts.discount, decisionCallback, displayCallback, messageCallback, pauseCallback, episode))
   if opts.episodes > 0:
-    # print here
+    value_estimation_ss_mean = sum(returns_collect)/len(returns_collect)
+    value_estimation_ss_std = (sum([(returns - value_estimation_ss_mean)**2 for returns in returns_collect])/len(returns_collect))**0.5
+    print(f"the value estimation for the start state 1)mean: {value_estimation_ss_mean:.4f} 2)std: {value_estimation_ss_std:.4f}")
     pass
 
   print()
