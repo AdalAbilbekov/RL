@@ -3,19 +3,19 @@ random policy (default discount factor γ = 0.9). Try different number
 of episodes (use -k xxxx -q) and provide mean value and the standard
 deviation over the episodes. Try also k= 10000.
 
-```python gridworld.py -g MazeGrid -a random -k 10000 -q ```
+```python gridworld.py -g MazeGrid -a random -k 10000 -q```
 
 RUNNING 10 EPISODES
-the value estimation for the start state 1)mean: 0.007877457191728785 2)std: 0.0157
+the value estimation for the start state 1)mean: 0.0079 2)std: 0.0157
 
 RUNNING 100 EPISODES
-the value estimation for the start state 1)mean: 0.0029827152677654014 2)std: 0.0101
+the value estimation for the start state 1)mean: 0.0030 2)std: 0.0101
 
 RUNNING 1000 EPISODES
-the value estimation for the start state 1)mean: 0.0012453999915731106 2)std: 0.0067
+the value estimation for the start state 1)mean: 0.0012 2)std: 0.0067
 
 RUNNING 10000 EPISODES
-the value estimation for the start state 1)mean: 0.0021224321113869726 2)std: 0.0127
+the value estimation for the start state 1)mean: 0.0021 2)std: 0.0127
 
 How many episodes do you need to be sure (confidence 95%) that your
 mean estimate is within ±0.0004 of the true mean?
